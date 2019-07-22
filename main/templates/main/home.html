@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	{% load static %}
+<!-- Compiled and minified CSS -->
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"-->
+
+    <!-- Compiled and minified JavaScript -->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" ></script -->
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.almost-flat.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit-icons.js"></script>
+
+
+            
+
+</head>
+
+<body>
+
+    <img class="uk-invisible" src="" width="" height="" alt="">
+    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">...</div>
+
+  
+    <div class="uk-container uk-container-center uk-margin-top">
+      <!-- Navigation -->
+    <nav class="uk-navbar">
+      <ul class="uk-navbar-nav">
+        <li><a href="#Profile">Profile</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#tools">Operating system</a></li>
+
+        
+
+      </ul>
+      
+
+
+
+    </nav>
+      <!-- content -->
+      <h1 class="uk-text-center" id="profile">Profile</h1>
+      <center><img class="uk-border-circle" width ="200" height="200" src="https://avatars1.githubusercontent.com/u/21129948?s=460&v=4" alt="from github" align="center"></center>
+      <div class="uk-panel uk-panel-box-primary">
+      <a href="#"><center>
+        <p>Name: AKCHHAY ALOK</p>
+        <p>E-mail: akchhay.alok91@gmail.com</p></a>
+      <p>Mobile: 8123402808</p>
+      <p>Location: Bangalore, Karnataka</p></div></center>
+      <hr class="uk-grid-divider">
+      <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
+      </div>    
+       
+       
+      <hr class="uk-grid-divider">
+      <h2 class="uk-text-center" id="experience">Experience</h1>
+      <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin></div> 
+      <div class="uk-panel uk-panel-box">
+        <h2>Netapp India Pvt Ltd</h2>
+        <h3>DevOps Engineer</h3>
+        <p>Feb 2019 - May 2019<p>
+        <p>Deployed by quess corp</p>
+
+        <p>
+          Roles/Responsibility:
+           <li>Performed Devops for linux and windows servers</li>
+           <li>Focussed on automation and configuration management</li>
+          <li>Wrote code and designed continual updates</li>
+          <li>Worked on Jira to track issue and resolved in a minimum time</li> 
+          <li>Used bash scripting for user creation, installing packages etc.</li>
+          <li>Used powershell for devops in windows servers</li>
+          <li>Used python for scripting in linux servers</li>
+          <li>Managed ~10 servers (Ubuntu,Suse 12,Windows 2016) using configuration management tool.</li>
+          <li>Built HTML document using sphinx</li>
+          <li>Used internal review-board for submitting for review.</li>
+
+        </p>
+      </div>
+
+      <div class="uk-panel uk-panel-box">
+        <h2>IPsoft global services Pvt Ltd</h2>
+        <h3>Corporate IT</h3>
+        <p>May 2018 - Feb 2019<p>
+
+        <p>
+          Roles/Responsibility:
+           <li>
+             Wrote Ansible playbook to deploy, configure, and manage servers
+           </li>
+           <li>
+             Wrote bash script for configuring linux servers
+           </li>
+           <li>
+             Wrote python script for configuring linux servers
+           </li>
+           <li>
+             Used git for version control
+           </li>
+        </p>
+      </div>      
+      
+      <div class="uk-panel uk-panel-box">
+        <h2>Synpro Systems Pvt Ltd</h2>
+        <h3>Technical Engineer</h3>
+        <p>Nov 2016 - May 2018<p>
+
+        <p>
+          Roles/Responsibility:
+           <li>
+             Used bash scripting for installing packages, user creation 
+           </li>
+           <li>
+             Ansible for devops in linux servers (ubuntu)
+           </li>
+           <li>
+             Wrote python script for configuring linux servers
+           </li>
+           <li>
+             Used git for version control
+           </li>
+           <li>Worked on Jira to trace issue and resolved them in a given time period.</li>
+        </p>
+      </div>      
+
+      
+      <hr class="uk-grid-divider">
+      <h2 class="uk-text-center" id="education">Education</h1>
+      <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
+      </div>  
+      <div>
+        <h2></h2>
+        <p></p>
+      </div>   
+  
+      
+
+      <hr class="uk-grid-divider">
+      <h2 class="uk-text-center" id="tools">Tools used</h1>
+      <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
+      </div>
+      <div>
+        <h2></h2>
+        <p></p>
+      </div>   
+    
+      
+
+      <hr class="uk-grid-divider">
+      <h2 class="uk-text-center" id="os">OS</h1>
+      <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
+      </div>
+      <div>
+        <h2></h2>
+        <p></p>
+      </div>   
+    
+
+      
+  <div class="row">
+  	{% for blo in blog %}
+
+     <p>{{blo.blog_name}}</p>
+     <p>{{blo.blog_email}}</p>
+
+  	{% endfor %}
+
+      <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+        <!-- Grey navigation panel
+
+              This content will be:
+          3-columns-wide on large screens,
+          4-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+
+      </div>
+
+      <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+        <!-- Teal page content
+
+              This content will be:
+          9-columns-wide on large screens,
+          8-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+
+      </div>
+
+    </div>
+          
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s3">
+        <!-- Grey navigation panel -->
+      </div>
+
+      <div class="col s9">
+        <!-- Teal page content  -->
+      </div>
+
+    </div>
+            
+
+</body>
+</html>
